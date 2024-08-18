@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digit_classification"
+description = "RODEM Project Template"
+readme = "README.md"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["template_test"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
